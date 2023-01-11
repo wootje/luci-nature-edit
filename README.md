@@ -1,30 +1,25 @@
-# OpenWrt luci feed
+# OpenWrt luci skin - nature edit
 
-[![Translation status](https://hosted.weblate.org/widgets/openwrt/-/svg-badge.svg)](https://hosted.weblate.org/engage/openwrt/?utm_source=widget)
 
-## Description
+Restyled the skin and added a background image.
 
-This is the OpenWrt "luci"-feed containing LuCI - OpenWrt Configuration Interface.
+I use the skin on all my hardware and haven't had any issues. I don't login using my mobile phone, so it's possible that there are some graphical bugs left. 
 
-## Usage
+<b>CSS file:</b>
+<br>
+https://github.com/wootje/luci-nature-edit/tree/master/themes/luci-theme-bootstrap/htdocs/luci-static/bootstrap/cascade.css
 
-This feed is enabled by default. Your feeds.conf.default (or feeds.conf) should contain a line like:
-```
-src-git luci https://github.com/openwrt/luci.git
-```
+<b>Background:</b>
+<br>
+https://github.com/wootje/luci-nature-edit/tree/master/themes/luci-theme-bootstrap/htdocs/luci-static/bootstrap/background.png
+<br>
+<br>
+Copy the files above to "/www/luci-static/bootstrap" and you've installed the skin.
+<br>
+<br>
+<br>
+<img src="https://github.com/wootje/luci-nature-edit/blob/master/screenshot.png"></img>
 
-To install all its package definitions, run:
-```
-./scripts/feeds update luci
-./scripts/feeds install -a -p luci
-```
-
-## API Reference
-
-You can browse the generated API documentation directly on Github.
-
- - [Server side Lua APIs](http://openwrt.github.io/luci/api/index.html)
- - [Client side JavaScript APIs](http://openwrt.github.io/luci/jsapi/index.html)
 
 ## Development
 
@@ -33,11 +28,3 @@ Documentation for developing and extending LuCI can be found [in the Wiki](https
 ## License
 
 See [LICENSE](LICENSE) file.
- 
-## Package Guidelines
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) file.
-
-## Translation status
-
-[![Translation status](https://hosted.weblate.org/widgets/openwrt/-/multi-auto.svg)](https://hosted.weblate.org/engage/openwrt/?utm_source=widget)
