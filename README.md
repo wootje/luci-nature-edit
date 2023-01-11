@@ -14,7 +14,7 @@ https://github.com/wootje/luci-nature-edit/tree/master/themes/luci-theme-bootstr
 https://github.com/wootje/luci-nature-edit/tree/master/themes/luci-theme-bootstrap/htdocs/luci-static/bootstrap/background.png
 <br>
 <br>
-Copy the files above to "/www/luci-static/bootstrap" and you've installed the skin.
+Copy the files above to "/www/luci-static/bootstrap" and you've installed the skin. Upload your own image if you'd like.
 <br>
 <br>
 <br>
