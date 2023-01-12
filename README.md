@@ -3,23 +3,24 @@
 
 Restyled the skin and added a background image.
 
-I use the skin on all my hardware and haven't had any issues. I don't login using my mobile phone, so it's possible that there are some graphical bugs left. 
+I use the skin on all my hardware and haven't had any issues. I don't login using my mobile phone, so it's possible that there are a few small graphical bugs left. 
 
-<b>CSS file:</b>
-<br>
-https://github.com/wootje/luci-nature-edit/tree/master/themes/luci-theme-bootstrap/htdocs/luci-static/bootstrap/cascade.css
+## Install the skin
 
-<b>Background:</b>
-<br>
-https://github.com/wootje/luci-nature-edit/tree/master/themes/luci-theme-bootstrap/htdocs/luci-static/bootstrap/background.png
-<br>
-<br>
-Copy the files above to "/www/luci-static/bootstrap" and you've installed the skin. Upload your own image if you'd like.
-<br>
-<br>
-<br>
-<img src="https://github.com/wootje/luci-nature-edit/blob/master/screenshot.png"></img>
+1. Copy the files above to the root directory.
+   <i>This will put the files automatically in "/www/luci-static/bootstrap".</i> 
+2. Activate the "bootstrap" skin in via the web-interface.
 
+you've installed the skin. 
+
+<i>Optionally  replace "background.png" with your own image to change the background if you don't like this one.</i?>
+<br>
+<br>
+<br>
+<img src="https://github.com/wootje/luci-nature-edit/blob/master/screenshots/screenshot_1.png"></img>
+<br>
+<br>
+<img src="https://github.com/wootje/luci-nature-edit/blob/master/screenshots/screenshot_2.png"></img>
 
 ## Development
 
