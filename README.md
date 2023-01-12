@@ -13,7 +13,7 @@ I use the skin on all my hardware and haven't had any issues. I don't login usin
 
 you've installed the skin. 
 
-<i>Optionally  replace "background.png" with your own image to change the background if you don't like this one.</i?>
+<i>Optionally  replace "background.png" with your own image to change the background if you don't like this one.</i>
 <br>
 <br>
 <br>
