@@ -21,6 +21,9 @@ you've installed the skin.
 <br>
 <br>
 <img src="https://github.com/wootje/luci-nature-edit/blob/master/screenshots/screenshot_2.png"></img>
+<br>
+<br>
+<img src="https://github.com/wootje/luci-nature-edit/blob/master/screenshots/screenshot_3.png"></img>
 
 ## Development
 
