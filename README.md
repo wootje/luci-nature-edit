@@ -29,3 +29,6 @@ Documentation for developing and extending LuCI can be found [in the Wiki](https
 ## License
 
 See [LICENSE](LICENSE) file.
+
+
+<img src="https://img.shields.io/github/downloads/wootje/einDa-skin-wootje-edit-2023/total.svg"></img>
