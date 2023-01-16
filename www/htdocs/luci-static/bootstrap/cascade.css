@@ -35,7 +35,7 @@ a.menu:hover {
     	border-bottom-color: #4da1c0!important;
     	border-bottom: ridge;
     	height: 42px!important;
-	color: #cfcfcffa!important;
+		color: #cfcfcffa!important;
 }
 
 .label, header [data-indicator] {
@@ -131,6 +131,7 @@ ul.tabs {
 
 .ifacebadge span {
     	vertical-align: middle;
+		padding: 5px;
 }
 
 .cbi-value-field {
@@ -138,8 +139,10 @@ ul.tabs {
 }
 
 .cbi-section-table-row .td.cbi-value-field {
-    	padding-top: 5px!important;
-    	padding-bottom: 5px!important;
+    padding-top: 5px!important;
+    padding-bottom: 5px!important;
+    padding-left: 10px!important;
+    padding-right: 10px!important;
 }
 
 
@@ -181,9 +184,9 @@ ul > li > a {
 	margin: 5px!important;
 }
 
-.ifacebadge span {
+/*.ifacebadge span {
 	margin-bottom: 5px!important;
-}
+}*/
 
 .cbi-button-action {
 	margin-left: 10px!important;
@@ -267,39 +270,61 @@ textarea {
 }
 
 
+.item::after, .btn, .cbi-button
+
+
 td div .cbi-checkbox {
     margin-left: 15px!important;
 }
 
 #view div {
-	border-color: #444!important;
+	border-color: #444;
 	border-radius: 10px;
 }
 
-#channel_graph, #view div svg {
+#channel_graph svg,
+#channel_graph, 
+#view div svg {
 	border 1px solid #444!important;
 	background: #22222240!important;
 	background-color: #22222240!important;
 	border-radius: 10px;
+	padding-bottom: 5px;
+    margin-top: 5px;
 	
 }
 
+#view div div div div div.center img {
+    height: 350px;
+    width: 950px;
+    text-align: center;
+    margin: 10px auto;
+    border-radius: 5px;
+    image-rendering: pixelated;
+    opacity: 90%;
+}
+
+.commandbox {
+	padding-top: 15px;
+}
+
 footer{
-    	background-color: #0b0c16;
-    	width: 100%;
-    	max-width: 1000px!important;
-	height: 40px!important;
-    	margin-left: auto;
-    	margin-right: auto;
-    	zoom: 1;
+    background-color: #0b0c16;
+    width: 100%;
+    max-width: 1000px!important;
+	min-height: 40px!important;
+    margin-left: auto;
+    margin-right: auto;
+    zoom: 1;
 	border-radius: 10px!important;
 	border-width: 0!important;
-    	width: 100%;
-    	max-width: 1000px!important;
+    width: 100%;
+    max-width: 1000px!important;
 	padding-left: 0px!important;
 	padding-right: 0px!important;
 	pading-top: 0px!important;
-	margin-top: unset!important;	
+	margin-top: unset!important;
+	word-break: break-word;
 }
 
 footer span a, footer span {
@@ -431,7 +456,8 @@ html {
 	font-size: 100%;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
-	height: 100%
+	height: 100%;
+	text-rendering: optimizelegibility;
 }
 
 a:focus {
@@ -471,7 +497,7 @@ textarea {
 	font-size: 100%;
 	box-sizing: border-box;
 	vertical-align: baseline;
-	line-height: 2em
+	line-height: 20px;
 }
 
 button::-moz-focus-inner,
@@ -573,6 +599,10 @@ p,
 	margin-bottom: 9px
 }
 
+#cbi-snmpd-group .cbi-section-descr {
+    margin-top: 10px;
+}
+
 p small {
 	font-size: 11px;
 	color: var(--text-color-low)
@@ -623,6 +653,11 @@ h4 {
 
 h4 small {
 	font-size: 12px
+}
+
+.modal.login h4 {
+    margin: 10px auto 20px auto;
+    text-align: center;
 }
 
 h6 {
@@ -774,12 +809,17 @@ textarea {
 }
 
 .cbi-value label.cbi-value-title {
-	padding-top: 6px;
+	/*padding-top: 6px;*/
 	font-size: 13px;
 	line-height: 18px;
 	flex: 0 0 180px;
 	text-align: right;
 	color: var(--text-color-high)
+}
+
+.cbi-title-ref b {
+    font-weight: 400!important;
+    margin-top: 0px;
 }
 
 label>input[type="checkbox"],
@@ -847,7 +887,7 @@ select,
 	top: -1px;
 	right: -1px;
 	bottom: -1px;
-	border: 1px solid var(--border-color-high);
+	border: 1px solid #fff0;
 	border-radius: 0 3px 3px 0;
 	font-weight: 700;
 	color: #c44;
@@ -1011,6 +1051,14 @@ textarea {
 	box-shadow: inset 0 1px 3px hsla(var(--border-color-low-hsl), .01)
 }
 
+.btn {
+    border: 1px solid #9b9a9a;
+}
+
+.cbi-button {
+    border: 1px solid #9b9a9a!important;
+}
+
 .item:hover::after,
 .btn:hover,
 .btn:focus,
@@ -1135,7 +1183,7 @@ textarea[readonly] {
 .table .tr:first-child .th {
 	padding-top: 9px;
 	font-weight: 700;
-	vertical-align: top
+	/*vertical-align: top*/
 }
 
 .table .td,
@@ -1531,6 +1579,10 @@ footer ul.breadcrumb {
 	width: 100%
 }
 
+#modal_overlay .modal.login hr {
+    opacity: 0;
+}
+
 body.modal-overlay-active {
 	overflow: hidden;
 	height: 100vh
@@ -1549,8 +1601,13 @@ body.modal-overlay-active #modal_overlay {
 	line-height: 18px
 }
 
+.alert-message.danger{
+    background: #d09766;
+    border-color: #d09766;
+    margin: 10px 10px 30px 10px;
+}
+
 .btn.danger,
-.alert-message.danger,
 .btn.error,
 .alert-message.error,
 .cbi-tooltip.error {
@@ -1599,7 +1656,7 @@ body.modal-overlay-active #modal_overlay {
 	color: var(--on-color);
 	font-size: 13px;
 	line-height: 2em;
-	border: 1px solid var(--border-color-high);
+	border: 1px solid #55555;
 	border-radius: 4px;
 	white-space: pre;
 	padding: 0 14px
@@ -1617,11 +1674,17 @@ body.modal-overlay-active #modal_overlay {
 .cbi-button-fieldadd,
 .cbi-button-add,
 .cbi-button-save {
-	--on-color: var(--success-color-high);
-	border-color: var(--on-color)
+	--on-color: #bfbfbf;
+    border-color: #00a66c;
+	/*--on-color: var(--success-color-high);
+	border-color: var(--on-color)*/
 }
 
-.btn.primary,
+.btn.primary {
+    color: #4da1c0;
+	border: 1px solid #555555;
+}
+
 .cbi-button-action,
 .cbi-button-apply,
 .cbi-button-reload,
@@ -1634,8 +1697,10 @@ body.modal-overlay-active #modal_overlay {
 .cbi-section-remove .cbi-button,
 .cbi-button-reset,
 .cbi-button-remove {
-	--on-color: var(--error-color-high);
-	border-color: var(--on-color)
+	--on-color: #bfbfbf;
+   	border-color: #d15653;
+	/*--on-color: var(--error-color-high);
+	border-color: var(--on-color)*/
 }
 
 .cbi-page-actions::after {
@@ -1649,7 +1714,6 @@ body.modal-overlay-active #modal_overlay {
 	margin-right: .4em
 }
 
-.btn.primary,
 .cbi-button-action.important,
 .cbi-page-actions .cbi-button-apply,
 .cbi-section-actions .cbi-button-edit {
@@ -1688,9 +1752,9 @@ body.modal-overlay-active #modal_overlay {
 
 .cbi-dropdown:not(.btn):not(.cbi-button) {
 	background: linear-gradient(var(--background-color-high) 0%, var(--border-color-low) 100%);
-	border: 1px solid var(--border-color-high);
+	border: 1px solid #555!important;
 	border-radius: 3px;
-	color: var(--text-color-high)
+	color: var(--text-color-high);
 }
 
 .cbi-dropdown>ul {
@@ -1728,7 +1792,7 @@ body.modal-overlay-active #modal_overlay {
 .cbi-dropdown.btn>.open,
 .cbi-dropdown.cbi-button>.open {
 	margin-left: .5em;
-	border-left: 1px solid;
+	/*border-left: 1px solid;*/
 	padding: 0 .5em
 }
 
@@ -1820,32 +1884,32 @@ body.modal-overlay-active #modal_overlay {
 }
 
 .cbi-dropdown[open]>ul.dropdown>li {
-	border-bottom: 1px solid var(--border-color-high)
+	border-bottom: 1px solid var(--border-color-high);
 }
 
 .cbi-dropdown[open]>ul.dropdown>li[selected].focus {
-	background: linear-gradient(90deg, var(--primary-color-medium) 50%, var(--primary-color-low))
+	background: linear-gradient(90deg, var(--primary-color-medium) 50%, var(--primary-color-low));
 }
 
 .cbi-dropdown[open]>ul.dropdown>li:last-child {
 	margin-bottom: 0;
-	border-bottom: none
+	border-bottom: none;
 }
 
 .cbi-dropdown[open]>ul.dropdown>li[unselectable] {
-	opacity: 0.7
+	opacity: 0.7;
 }
 
 .cbi-title-ref {
-	color: #37c
+	color: #4da1c0;
 }
 
 .cbi-title-ref::after {
-	content: "➙"
+	content: "➙";
 }
 
 .cbi-tooltip-container {
-	cursor: help
+	cursor: help;
 }
 
 .cbi-tooltip {
@@ -1858,13 +1922,13 @@ body.modal-overlay-active #modal_overlay {
 	white-space: pre;
 	opacity: 0;
 	transition: opacity .25s ease-in;
-	padding: 2px 5px
+	padding: 2px 5px;
 }
 
 .cbi-tooltip-container:hover .cbi-tooltip:not(:empty) {
 	left: auto;
 	opacity: 1;
-	transition: opacity .25s ease-in
+	transition: opacity .25s ease-in;
 }
 
 .cbi-progressbar {
@@ -1874,7 +1938,7 @@ body.modal-overlay-active #modal_overlay {
 	min-width: 170px;
 	height: 8px;
 	background: var(--background-color-medium);
-	margin: 1.4em 0 4px
+	margin: 1.4em 0 4px;
 }
 
 .cbi-progressbar>div {
@@ -1882,7 +1946,7 @@ body.modal-overlay-active #modal_overlay {
 	height: 100%;
 	transition: width .25s ease-in;
 	width: 0%;
-	border-radius: 2px
+	border-radius: 2px;
 }
 
 .cbi-progressbar::before {
@@ -1892,7 +1956,7 @@ body.modal-overlay-active #modal_overlay {
 	content: attr(title);
 	white-space: pre;
 	overflow: hidden;
-	text-overflow: ellipsis
+	text-overflow: ellipsis;
 }
 
 .zonebadge .cbi-tooltip {
@@ -1901,29 +1965,29 @@ body.modal-overlay-active #modal_overlay {
 	pointer-events: none;
 	box-shadow: 0 0 3px #444;
 	margin: -1.6em 0 0 -5px;
-	padding: 1px
+	padding: 1px;
 }
 
 .zonebadge .cbi-tooltip>* {
 	z-index: 2;
 	position: relative;
-	margin: 1px
+	margin: 1px;
 }
 
 .zone-forwards>* {
 	flex: 1 1 40%;
-	padding: 1px
+	padding: 1px;
 }
 
 .zone-forwards>span {
 	flex-basis: 10%;
-	text-align: center
+	text-align: center;
 }
 
 .zone-forwards .zone-src,
 .zone-forwards .zone-dest {
 	display: flex;
-	flex-direction: column
+	flex-direction: column;
 }
 
 .btn.active,
@@ -1935,25 +1999,25 @@ body.modal-overlay-active #modal_overlay {
 .btn[disabled] {
 	cursor: default;
 	opacity: var(--disabled-opacity);
-	box-shadow: none
+	box-shadow: none;
 }
 
 .btn.large {
 	font-size: 15px;
 	line-height: normal;
 	border-radius: 6px;
-	padding: 9px 14px
+	padding: 9px 14px;
 }
 
 .btn.small {
 	font-size: 11px;
-	padding: 7px 9px
+	padding: 7px 9px;
 }
 
 button.btn::-moz-focus-inner,
 input[type=submit].btn::-moz-focus-inner {
 	border: 0;
-	padding: 0
+	padding: 0;
 }
 
 .close {
@@ -1963,13 +2027,13 @@ input[type=submit].btn::-moz-focus-inner {
 	font-weight: 700;
 	line-height: 13.5px;
 	text-shadow: 0 1px 0 #fff;
-	opacity: 0.25
+	opacity: 0.25;
 }
 
 .close:hover {
 	color: #000;
 	text-decoration: none;
-	opacity: 0.4
+	opacity: 0.4;
 }
 
 .alert-message {
@@ -1982,11 +2046,11 @@ input[type=submit].btn::-moz-focus-inner {
 	box-shadow: 1px 1px 1px var(--border-color-low);
 	white-space: unset;
 	border-color: var(--border-color-high) var(--border-color-high) var(--border-color-low);
-	padding: .5em .5em .25em
+	padding: .5em .5em .25em;
 }
 
 .alert-message .close {
-	margin-top: 1px
+	margin-top: 1px;
 }
 
 .alert-message h4,
@@ -2000,11 +2064,11 @@ input[type=submit].btn::-moz-focus-inner {
 	line-height: inherit;
 	background: transparent;
 	margin: .25em 0;
-	padding: 0
+	padding: 0;
 }
 
 .alert-message button {
-	margin: .25em 0
+	margin: .25em 0;
 }
 
 .label,
@@ -2018,32 +2082,32 @@ header [data-indicator] {
 	border-radius: 3px;
 	text-shadow: none;
 	margin: .125em 0 .125em .4em;
-	padding: 3px 3px 2px
+	padding: 3px 3px 2px;
 }
 
 a.label:hover {
-	text-decoration: none
+	text-decoration: none;
 }
 
 .label.important {
 	background-color: var(--primary-color-high);
-	color: var(--on-primary-color)
+	color: var(--on-primary-color);
 }
 
 .label.warning {
 	background-color: var(--warn-color-high);
-	color: var(--on-warn-color)
+	color: var(--on-warn-color);
 }
 
 .label.success {
 	background-color: var(--success-color-high);
-	color: var(--on-success-color)
+	color: var(--on-success-color);
 }
 
 .label.notice,
 header [data-indicator][data-style="active"] {
 	color: var(--on-primary-color);
-	background-color: var(--primary-color-high)
+	background-color: var(--primary-color-high);
 }
 
 form.inline {
@@ -2054,7 +2118,8 @@ form.inline {
 #syslog {
 	width: 100%;
 	color: var(--text-color-highest);
-	margin-bottom: 18px
+	margin-bottom: 18px;
+	line-height: 20px;
 }
 
 .cbi-section-table .tr:hover .td,
@@ -2179,6 +2244,10 @@ th[data-sort-direction="desc"]::after {
 	-webkit-mask-size: cover
 }
 
+.cbi-value-field .cbi-value-description {
+    margin-top: 10px;
+}
+
 .cbi-section-error {
 	border: 1px solid red;
 	border-radius: 3px;
@@ -2207,7 +2276,8 @@ th[data-sort-direction="desc"]::after {
 	flex-direction: column;
 	line-height: 1.2em;
 	min-width: 100px;
-	margin: 0 10px
+	margin: 0 10px;
+    padding: 5px;
 }
 
 .ifacebox .ifacebox-head {
@@ -2368,9 +2438,12 @@ div.cbi-value var.cbi-tooltip-container,
 	max-width: 900px
 }
 
+#modal_overlay .modal.login {
+    padding-bottom: 15px;
+}
+
 #modal_overlay>.modal.login>button.important {
 	font-size: 120% !important;
-	margin-top: .5em;
 	width: 100%
 }
 
@@ -2619,6 +2692,14 @@ h2 small,
 h3 small,
 h5 {
 	font-size: 14px
+}
+
+#cbi-snmpd-com2sec h3, 
+#cbi-snmpd-group h3,
+#cbi-snmpd-group h3 {
+    font-size: 15px;
+    margin-top: 25px;
+    text-transform: uppercase;
 }
 
 .cbi-value>.cbi-section,
