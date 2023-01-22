@@ -7,9 +7,10 @@ I use the skin on all my hardware and haven't had any issues. I don't login usin
 <br>
 <br>
 <h2>Install the skin</h2>
-1. Copy the files above to the root directory. <br>
+1. Download the latest release. <br>
+2. Copy the "www" folder to the root directory. <br>
 	<i>This will put the files automatically in "/www/luci-static/bootstrap".</i> <br>
-2. Activate the "bootstrap" skin in via the web-interface. <br>
+3. Activate the "bootstrap" skin in via the web-interface. <br>
 <br>
 Thats it, you've installed the skin!
 <br>
