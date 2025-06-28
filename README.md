@@ -19,6 +19,12 @@ Thats it, you've installed the skin!
 <br>
 <br>
 <br>
+<b>Buy me a cup of coffee!</b> 🙂👍 <br>
+https://urlshrt.eu/buycupofcoffee
+<br>
+<br>
+<br>
+<br>
 <h2>Screenshots</h2>
 <img src="https://github.com/wootje/luci-nature-edit/blob/master/screenshots/screenshot_1.png"></img>
 <br>
